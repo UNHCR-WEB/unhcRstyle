@@ -1,16 +1,13 @@
-## alpha element_blank element_line element_rect element_text unit
+.onAttach <- function(...) {
+  needed <- core[!is_attached(core)]
+  if (length(needed) == 0)
+    return()
 
-.onLoad <- function(libname = find.package("unhcRstyle"), pkgname = "unhcRstyle") {
+  crayon::num_colors(TRUE)
+  unhcrstyle_attach()
 
+}
 
-  # CRAN Note avoidance
-  if (getRversion() >= "2.15.1")
-    utils::globalVariables(
-      # used to remove note when doing devtools::check(document = FALSE, args = c('--as-cran'))
-      c("alpha", "element_blank", "element_line", "element_rect", "element_text", "unit",
-        "censor", "is.formula", "is.sec_axis", "is.waive manual_pal"
-      )
-    )
-
-
+is_attached <- function(x) {
+  paste0("package:", x) %in% search()
 }

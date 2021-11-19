@@ -1,40 +1,30 @@
 Package: unhcRstyle
 Type: Package
 Title: Use consistently UNHCR branding though preconfigured palette, ggplot2 themes and Rmd template
-Version: 0.1.0
+Version: 0.9.0
 Authors@R: c(
   person("Cedric", "Vidonne", role = c("aut", "cre"), email = "vidonne@unhcr.org"),
-  person("Edouard", "Legoupil", role = c("aut", "ctb"), email = "legoupil@unhcr.org"))
+  person("Edouard", "Legoupil", role = c("aut", "ctb"), email = "legoupil@unhcr.org"),
+  person("Ahmadou", "Dicko", role = c("aut", "ctb"), email = "mail@ahmadoudicko.com"))
 Maintainer: Cedric Vidonne <vidonne@unhcr.org>
-Description: A collection of template, palettes and themes for plots, documents, and slides
- based on UNHCR branding
+Description: A collection of template, palettes and ggplot2 themes, documents, and slides all based on UNHCR branding.
 Depends:
-    bookdown,
-    markdown,
-    xml2
+    R (>= 3.5)
 Imports:
-    tufte,
-    htmltools,
-    xfun,
-    knitr (>= 1.18),
-    rmarkdown,
-    stringr,
-    magrittr,
-    pagedown,
-    ggplot2,
-    extrafont,
-    scales,
-    ragg,
-    tidyverse,
-    unhcrdatapackage
+    unhcrthemes,
+    unhcrdown,
+    unhcrdatapackage,
+    crayon,
+    cli
 Remotes:
-    unhcr/unhcrdatapackage
+    unhcr/unhcrdatapackage,
+    vidonne/unhcrdown,
+    vidonne/unhcrthemes
 Suggests:
-    promises,
-    testit,
-    xaringan,
-    pdftools,
-    revealjs
+    covr,
+    knitr,
+    rmarkdown,
+    testthat
 License: MIT + file LICENSE
 URL: https://github.com/unhcr-web/unhcRstyle
 BugReports: https://github.com/unhcr-web/unhcRstyle/issues
@@ -42,4 +32,4 @@ SystemRequirements: Pandoc (>= 2.2.3)
 VignetteBuilder: knitr
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1
+RoxygenNote: 7.1.2
