@@ -1,4 +1,4 @@
-# unhcRstyle
+# unhcRstyle - __Deprecated__ -- please go to https://github.com/vidonne/unhcrthemes and https://github.com/vidonne/unhcrdown
 
 ## Content 
 
