@@ -1,5 +1,5 @@
 # unhcRstyle - __Deprecated__ -- please go to https://github.com/vidonne/unhcrthemes and https://github.com/vidonne/unhcrdown
-
+# As agreed with Cedric via Teams call, this repo can be archived (see the above links for latest code)
 ## Content 
 
 A package with all necessary elements to quickly implement [UNHCR Brand style](https://intranet.unhcr.org/content/dam/unhcr/intranet/staff%20support/strategic/documents/english/branded-templates/main/Accessing%20UNHCR%20Brand%20Compliant%20Templates%20user%20guide.pdf) in your statistical products and data stories: 
